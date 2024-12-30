@@ -14,8 +14,7 @@ ls: ls.o
 	$(CC) -o $@ $^ $(CFLAGS)
 
 install:
-	install -D $(TARGETS) /usr/local/bin/
-
+	install -D $(TARGETS) $(HOME)/.local/bin/
 
 clean:
 	rm -rf *.o $(TARGETS)
